@@ -49,7 +49,7 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => console.log("custom")]
+ arrFunctions: [() => {const x = 1; const y = 2; console.log("custom" + x + y)}]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
